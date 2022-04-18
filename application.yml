@@ -1,0 +1,22 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: https://localhost:8761/eureka/
+  instanc:
+    hostname: localhost
+    
+    
+    micreoservice:
+      branch-service:
+        endpoints:
+          endpoint:
+            uri: https://BRANCH-SERVICE/
+          
+       student-service:
+        endpoints:
+          endpoint:
+            uri: https://STUDENT-SERVICE/
+      
+      
